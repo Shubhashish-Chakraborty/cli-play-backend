@@ -21,7 +21,10 @@ app.use(cors(corsOptions));
 app.use("/api/v1/auth/user", UserRouter);
 
 app.get("/", (req, res) => {
-    res.send("LetMeRecall Server is up!!")
+    res.send(`CLI Playground's Server is up!!
+        <br/>
+        <a href='https://github.com/Shubhashish-Chakraborty/cli-playground'>Go Clone the PythonCLI and Enjoy</a>
+    `)
 })
 
 app.listen(PORT, () => {
